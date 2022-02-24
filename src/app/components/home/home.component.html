@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemoryShooy</title>
+</head>
+<body>
+  <main class="main">
+    <div class="card m-4 p-3 bg-black custom-banner">
+      <div class="card-body text-center"><h1 class="text-light">Be part of the coolest friends</h1></div>
+    </div>
+    <!-- Products -->
+    <div class="main-container-products d-flex justify-content-center flex-wrap p-3 bg-light gap-3">
+      <section  *ngFor="let product of products">
+        <!-- Products iterator -->
+          <div *ngIf="products">
+            <div class="card card-custom">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://source.unsplash.com/random" class="img-fluid"/>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{product.productName}}</h5>
+                <p class="card-text">{{product.productDescription}}</p>
+                <p class="card-text d-flex align-items-start gap-3">Price: <span><h5>{{product.productPrice}}</h5></span></p>
+                <a href="#!" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

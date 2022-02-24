@@ -1,0 +1,16 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-banner{
+  width: 90%;
+}
+.main-container-products{
+  border-radius: 10px;
+  width: 90%;
+}
+.card-custom{
+  width: 300px;
+  height: auto;
+}
